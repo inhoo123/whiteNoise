@@ -1,0 +1,45 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+body {
+  .title {
+    text-align: center;
+  }
+  .sound-list {
+    margin-left: 10%;
+    margin-right: 20%;
+    display: flex;
+  }
+  .sound-container {
+    display: block;
+    text-align: center;
+    margin: 0.25rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: rgb(53, 49, 49);
+  }
+}
+
+nav.main {
+  background-color: #252424;
+  ul {
+    display: flex;
+    list-style: none;
+    li {
+      padding: 12px 16px;
+    }
+    li.notice,
+    li.login {
+      margin-left: auto;
+    }
+    li:hover {
+      background-color: #aaa;
+      color: black;
+      cursor: pointer;
+    }
+  }
+}
