@@ -8,6 +8,6 @@
 </div>
 <nav class="main">
 	<ul>
-		<li class="login"><a href="${rootPath}/white_noise/login">Log In</a></li>
+		<li class="login"><a href="${rootPath}/user/login">Log in</a></li>
 	</ul>
 </nav>

@@ -9,6 +9,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.inhoo.white_noise.models.UserVO;
+import com.inhoo.white_noise.service.UserService;
+
 /**
  * Handles requests for the application home page.
  */
@@ -20,10 +23,25 @@ public class HomeController {
 
 		return "home";
 	}
-	
-	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	@RequestMapping(value="/user/login", method = RequestMethod.GET )
 	public String login() {
-		return "white_noise/login";
+		
+		return "user/login";
 	}
-
+	@RequestMapping(value="/user/join", method = RequestMethod.GET )
+	public String join() {
+		
+		return "user/login";
+	}
+	@RequestMapping(value="/join",method=RequestMethod.POST)
+	public String join(UserVO userVO,Model model) {
+		
+	
+		int ret = UserService.join(userVO);
+		if(ret < 1) {
+			model.addAttribute("JOIN_MSG","FAIL");
+			return "user/join";
+		}
+		return "redirect:/";
+	}
 }
