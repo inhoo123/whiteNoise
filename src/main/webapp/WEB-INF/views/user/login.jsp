@@ -6,4 +6,4 @@
 <input value="id" name="id" placeholder="passowrd"/>
 <input value="passowrd" name="passowrd" placeholder="password"/> 
 </form>
-<a href="${rootPath }/register">Register</a>
+<a href="${rootPath }/user/join">Join</a>
