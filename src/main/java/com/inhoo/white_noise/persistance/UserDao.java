@@ -6,10 +6,14 @@ import org.apache.ibatis.annotations.Select;
 
 import com.inhoo.white_noise.models.UserVO;
 
-public class UserDao {
- 
+public interface UserDao {
+	
 	public int insert(UserVO userVO);
 	
-	@Select("SELECT * FROM USERS")
+	@Select("SELECT * FROM tbl_users WHERE user_email= #{user_email} ")
+	public UserVO loginByUserEmailAndPassword(String user_email);
+	
+	@Select("SELECT * FROM tbl_users")
 	public List<UserVO> selectAll();
+	
 }

@@ -12,5 +12,5 @@
 	const rootPath = "${rootPath}"
 </script>
 <script src="${rootPath}/static/js/main.js"></script>
-<script src="https://kit.fontawesome.com/477ac97615.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/477ac97615.js"></script>
 </head>

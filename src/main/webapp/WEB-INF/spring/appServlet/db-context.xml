@@ -8,16 +8,16 @@
 	<!-- dataSource -->
 	<bean id="ds" class="org.apache.commons.dbcp2.BasicDataSource">
 		<property name="driverClassName"  value="com.mysql.cj.jdbc.Driver" />
-		<property name="url"  value="jdbc:mysql://localhost:3306/study_db"/>
-		<property name="username" value="inhoo_user" />
-		<property name="password" value="@dkssud028" />
+		<property name="url"  value="jdbc:mysql://localhost:3306/white_noise"/>
+		<property name="username" value="user1" />
+		<property name="password" value="!Biz8080" />
 	</bean>
 	
 	<!-- SqlSessionFactoryBean -->
 	<bean id="sessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="ds"/>
 		<property name="typeAliasesPackage" value="com.inhoo.white_noise.models"/>
-		<property name="mapperLocations" value="/WEB-INF/spring/mapper/*-mapper.xml"/>
+		<property name="mapperLocations" value="/WEB-INF/spring/appServlet/mapper/*-mapper.xml"/>
 	</bean>
 	
 	<!-- sqlSessionTemplate -->

@@ -18,6 +18,8 @@
 		<property name="suffix" value=".jsp" />
 	</bean>
 	<context:component-scan base-package="com.inhoo.white_noise.controller" />
+	<context:component-scan base-package="com.inhoo.white_noise.service" />
+	<context:component-scan base-package="com.inhoo.white_noise.service.impl" />
 	<context:component-scan base-package="com.inhoo.white_noise" />
 </beans>
 

@@ -6,8 +6,7 @@
 <h1>WhiteNoise</h1>
 <p>meditation sounds</p>
 </div>
-<nav class="main">
-	<ul>
-		<li class="login"><a href="${rootPath}/user/login">Log in</a></li>
-	</ul>
+<nav class="header">
+		<a href="${rootPath}/user/login">Log in</a>
+		<a href="${rootPath}/user/join">Register</a>
 </nav>

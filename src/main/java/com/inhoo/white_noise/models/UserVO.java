@@ -12,9 +12,8 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 public class UserVO {
-	int user_seq;
-	String user_id;
+	String user_email;
+	String user_role;
 	String user_password;
 	String user_nick;
-	String role;
 }

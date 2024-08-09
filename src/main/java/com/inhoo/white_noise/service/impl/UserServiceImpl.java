@@ -6,24 +6,28 @@ import org.springframework.stereotype.Service;
 
 import com.inhoo.white_noise.models.UserVO;
 import com.inhoo.white_noise.persistance.UserDao;
+import com.inhoo.white_noise.service.UserService;
+
 @Service
-public class UserServcieImpl {
-	
+public class UserServiceImpl implements UserService {
+
 	protected final UserDao userDao;
 
-	public UserServcieImpl(UserDao userDao) {
+	public UserServiceImpl(UserDao userDao) {
 		super();
 		this.userDao = userDao;
 	}
+
 	@Override
-	public int join(UserVO userVO) {
+	public int insert(UserVO userVO) {
 		List<UserVO> users = userDao.selectAll();
-		if(users == null || users.size() < 1) {
-			userVO.setRole("ADMIN");
+		if (users == null || users.size() < 1) {
+			userVO.setUser_role("ADMIN");
 		} else {
-			userVO.setRole("USER");
+			userVO.setUser_role("USER");
 		}
 		int ret = userDao.insert(userVO);
 		return ret;
 	}
+
 }
