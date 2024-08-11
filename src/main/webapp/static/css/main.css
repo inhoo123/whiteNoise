@@ -3,18 +3,20 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: whitesmoke;
+  background-color:#ddd ;
 }
 .title {
   width: 100%;
   height: 10vh;
   text-align: center;
+  background-color: darkgray;
 }
 .header {
   width: 100%;
   height: 5vh;
   text-align: center;
   align-items: right;
+  text-decoration: none;
 }
 .sound-list {
   margin-top: 10%;
@@ -61,7 +63,9 @@ audio {
   width: 100%;
   outline: none;
 }
-
+input{
+  color: whitesmoke ;
+}
 footer {
   text-align: center;
   padding: 20px;
@@ -71,3 +75,35 @@ footer {
   bottom: 0;
   width: 100vw;
 }
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  background: #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+input[type="range"]::-moz-range-thumb {
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+

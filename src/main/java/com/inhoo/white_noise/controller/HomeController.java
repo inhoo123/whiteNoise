@@ -25,7 +25,7 @@ public class HomeController {
 		
 		UserVO userVO = (UserVO)httpSession.getAttribute("USER");
 		if(userVO==null) {
-			return "redirect:/user/login?error=need";
+			return "error";
 		}
 		return "home";
 	}

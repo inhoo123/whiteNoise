@@ -6,6 +6,8 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="${rootPath}/static/css/main.css" rel="stylesheet" />
+<link href="${rootPath}/static/css/login.css" rel="stylesheet" />
+<link href="${rootPath}/static/css/join.css" rel="stylesheet" />
 <script>
 	//JSP 에서 선언된 rootPath 변수를 *.js 파일에서 사용할수 있도록
 	//JS 의 변수로 선언하기

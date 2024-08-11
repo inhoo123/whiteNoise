@@ -1,13 +1,9 @@
 <div class="sound-list">
 	<div class="sound-container">
 		<h2>Rain</h2>
-		<i id="rain" class="fa-solid fa-cloud-bolt fa-2xl"></i>
-		<audio autoplay>
-			<source src="${rootPath }/static/mp3/rain-and-thunder-sfx-12820.mp3"
-				type="audio/mp3">
-		</audio>
+		<i id="rain" class="fa-solid fa-cloud-rain fa-2xl"></i>
 		<div>
-			<input type="range" id="RainVolumeSlider" min="0" max="100" value="1">
+			<input type="range" id="RainVolumeSlider" min="0" step="0.02" max="1" value="0">
 		</div>
 		<script src="${rootPath}/static/js/main.js"></script>
 	</div>
@@ -19,20 +15,20 @@
 				type="audio/mp3">
 		</audio>
 		<div>
-			<input type="range" id="ThunderVolumeSlider" min="0" max="100" value="1">
+			<input type="range" id="ThunderVolumeSlider" min="0" step="0.02" max="1" value="0">
 		</div>
 		<script src="${rootPath}/static/js/main.js"></script>
 	</div>
 	<div class="sound-container">
-		<h2>thunder</h2>
-		<i id="fan" class="fa-solid fa-cloud-bolt fa-2xl"></i>
+		<h2>fan</h2>
+		<i id="fan" class="fa-solid fa-fan fa-2xl"></i>
 		<audio autoplay>
 			<source src="${rootPath }/static/mp3/my-room-and-its-noisy-fan-27352.mp3"
 				type="audio/mp3">
 		</audio>
 		<div>
-			<input type="range" id="FanVolumeSlider" min="0" max="100" value="1">
-		</div>
+			<input type="range" id="FanVolumeSlider" min="0" step="0.02" max="1" value="0">
+		</div>   
 		<script src="${rootPath}/static/js/main.js"></script>
 	</div>
 </div>

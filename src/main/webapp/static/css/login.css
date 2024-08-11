@@ -1,5 +1,5 @@
 /* General form styling */
-.user.join {
+.user.login {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,21 +11,21 @@
   }
   
   /* Fieldset styling */
-  .user.join fieldset {
+  .user.login fieldset {
     border: none;
     padding: 0;
   }
   
   /* Legend styling */
-  .user.join legend {
+  .user.login legend {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
   }
   
   /* Input styling */
-  .user.join input[type="text"],
-  .user.join input[type="password"] {
+  .user.login input[type="text"],
+  .user.login input[type="password"] {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -35,14 +35,14 @@
   }
   
   /* Required indicator styling */
-  .user.join span {
+  .user.login span {
     color: red;
     font-weight: bold;
     margin-right: 5px;
   }
   
   /* Button styling */
-  .user.join input[type="button"] {
+  .user.login input[type="button"] {
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
@@ -52,12 +52,12 @@
     transition: background-color 0.2s ease-in-out;
   }
   
-  .user.join input[type="button"]:hover {
+  .user.login input[type="button"]:hover {
     background-color: #3e8e41;
   }
   
   /* Error message styling (assuming it's outside the form) */
-  .join-error {
+  .login-error {
     color: red;
     font-weight: bold;
     margin-bottom: 10px;

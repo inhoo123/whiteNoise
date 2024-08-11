@@ -39,7 +39,6 @@ public class UserController {
 		UserVO user = userDao.loginByUserEmailAndPassword(user_email);
 		if (user.getUser_password().equals(user_password)) {
 			httpSession.setAttribute("USER", user);
-			return "home";
 		}
 		return "redirect:/";
 	}
@@ -52,12 +51,13 @@ public class UserController {
 	}
 
 	@RequestMapping(value = "/join", method = RequestMethod.POST)
-	public String join(UserVO userVO, Model model) {
+	public String join(UserVO userVO, Model model,String user_email, HttpSession httpSession ) {
 		int ret = userService.insert(userVO);
-		if (ret < 1) {
+		UserVO user = userDao.joinByUserEmail(user_email);
+		if (ret < 1 && !user.getUser_email().equals(user_email)) {
 			model.addAttribute("JOIN_MSG", "FAIL");
-			return "user/join";
+			return "home";	
 		}
-		return "redirect:/";
+		return "user/join";
 	}
 }

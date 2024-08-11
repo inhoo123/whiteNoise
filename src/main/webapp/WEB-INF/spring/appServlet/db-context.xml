@@ -24,7 +24,6 @@
 	<bean class="org.mybatis.spring.SqlSessionTemplate">
 		<constructor-arg ref="sessionFactoryBean"/>
 	</bean>
-	
 	<mybatis-spring:scan base-package="com.inhoo.white_noise.persistance"/>
 
 </beans>

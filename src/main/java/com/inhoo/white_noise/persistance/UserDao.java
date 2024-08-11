@@ -16,4 +16,7 @@ public interface UserDao {
 	@Select("SELECT * FROM tbl_users")
 	public List<UserVO> selectAll();
 	
+	@Select("SELECT * FROM tbl_users WHERE user_email= #{user_email}")
+	public UserVO joinByUserEmail(String user_email);
+	
 }
